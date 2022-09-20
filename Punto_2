@@ -1,0 +1,74 @@
+
+
+// Julio Andres Alfonso Quintero
+// Andres Mauricio Holguin 
+//Gabriel Gonzalez
+
+
+public class Main {
+
+    public static void main(String args[])
+    {
+    	
+    	{
+    	
+    	
+        //create the list
+        SinglyLinkedList PeriodicTable = new SinglyLinkedList();
+        
+        
+
+        //add some nodes...
+        System.out.println("Tabla Periodica de los Elementos Quimicos");
+        
+        PeriodicTable.appendNode(new ListNode("Elemento"));
+        PeriodicTable.appendNode(new ListNode("C"));
+        
+        
+        PeriodicTable.insertNode(new ListNode<String>("Calcio,MAasa Atomica: 3.6586, Peso Atomico: 3.56, Simbolo : C"),1);
+        
+        PeriodicTable.insertNode(new ListNode<String>("Hierro,MAasa Atomica: 4.6590, Peso Atomico: 9.26, Simbolo : Hi"),2);
+        
+        PeriodicTable.insertNode(new ListNode<String>("Oxigeno\nMAasa Atomica: 1.796\n Peso Atomico: 4.57, Simbolo : O2"),3);
+        
+        PeriodicTable.insertNode(new ListNode<String>("Agua,\nMAasa Atomica: 2.586\n Peso Atomico: 1.36\n Simbolo : HO2:"),4);
+    
+        System.out.println(PeriodicTable);
+        
+        PeriodicTable.deleteNode(2);
+        System.out.println(PeriodicTable);
+       
+        
+        PeriodicTable.printList();
+        System.out.println("Numero de Nodos en la Lista : "+PeriodicTable.getNumElements());
+
+        System.out.println();
+        System.out.println();
+        
+        //Invirtiendo la Tabla...
+        
+        System.out.println("Tabla Periodica de los Elementos Quimicos Invertida");
+        SinglyLinkedList PeriodicTable2 = new SinglyLinkedList();
+       
+        
+        PeriodicTable2.appendNode(new ListNode("C "));
+        
+        PeriodicTable2.appendNode(new ListNode("Simbolo"));
+        PeriodicTable2.appendNode(new ListNode("3.56:"));
+        PeriodicTable2.appendNode(new ListNode("Peso Atomico:"));
+        PeriodicTable2.appendNode(new ListNode("3.9586"));
+        PeriodicTable2.appendNode(new ListNode("Masa Atomica"));
+        PeriodicTable2.appendNode(new ListNode("Calcio"));
+        PeriodicTable2.appendNode(new ListNode("Elemento"));
+        System.out.println();
+       
+       
+        PeriodicTable2.printList();
+        System.out.println("Numero de Nodos en la Lista : "+PeriodicTable.getNumElements());
+        
+        
+        
+       }
+   }
+}   
+
