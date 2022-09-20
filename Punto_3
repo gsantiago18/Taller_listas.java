@@ -1,0 +1,10 @@
+public class invertir {
+    public static void main(String[] args) {
+        String cadena = "Club Atletico Mineiro";
+        char []invertir=cadena.toCharArray();
+        int cont;
+        for(cont=cadena.length()-1;cont>=0;cont--){
+         System.out.print(" "+ invertir(cont));
+        }
+    }
+}
