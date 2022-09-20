@@ -21,24 +21,22 @@ public class Main {
         //add some nodes...
         System.out.println("Tabla Periodica de los Elementos Quimicos");
         
-        PeriodicTable.appendNode(new ListNode("Elemento"));
+        PeriodicTable.appendNode(new ListNode("Elemento "));
+        
         PeriodicTable.appendNode(new ListNode("C"));
         
+        PeriodicTable.insertNode(new ListNode<String>("Calcio"),1);
         
-        PeriodicTable.insertNode(new ListNode<String>("Calcio,MAasa Atomica: 3.6586, Peso Atomico: 3.56, Simbolo : C"),1);
+        PeriodicTable.insertNode(new ListNode<String>("Masa Atomica:"),2);
         
-        PeriodicTable.insertNode(new ListNode<String>("Hierro,MAasa Atomica: 4.6590, Peso Atomico: 9.26, Simbolo : Hi"),2);
+        PeriodicTable.insertNode(new ListNode<String>("3.9586"),3);
         
-        PeriodicTable.insertNode(new ListNode<String>("Oxigeno\nMAasa Atomica: 1.796\n Peso Atomico: 4.57, Simbolo : O2"),3);
+        PeriodicTable.insertNode(new ListNode<String>("Peso Atomico:"),4);
         
-        PeriodicTable.insertNode(new ListNode<String>("Agua,\nMAasa Atomica: 2.586\n Peso Atomico: 1.36\n Simbolo : HO2:"),4);
-    
-        System.out.println(PeriodicTable);
+        PeriodicTable.insertNode(new ListNode<String>("3.56"),5);
         
-        PeriodicTable.deleteNode(2);
-        System.out.println(PeriodicTable);
+        PeriodicTable.insertNode(new ListNode<String>("Simbolo:"),6);
        
-        
         PeriodicTable.printList();
         System.out.println("Numero de Nodos en la Lista : "+PeriodicTable.getNumElements());
 
@@ -68,7 +66,7 @@ public class Main {
         
         
         
-       }
+        
+    }
    }
-}   
-
+}
